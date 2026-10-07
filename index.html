@@ -1,40 +1,44 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prof. Dr. Md. Nurul Islam | Vice-Chancellor, Jahangirnagar University</title>
-    <meta name="description" content="Official website and Information Hub of Professor Dr. Md. Nurul Islam, Vice-Chancellor of Jahangirnagar University (JU), Savar, Dhaka. Academic journey, research, publications, news coverage, and photo gallery.">
-    <meta name="keywords" content="Professor Dr. Md. Nurul Islam, Vice-Chancellor Jahangirnagar University, JU VC, Geography and Environment, Climate Change, Fluvial Geomorphology, GIS Remote Sensing, Higher Education Bangladesh">
+    <meta name="description" content="Official Information Hub of Professor Dr. Md. Nurul Islam, Vice-Chancellor of Jahangirnagar University (JU), Savar, Dhaka. Explore academic journey, research, news activities, and photo gallery.">
+    <meta name="keywords" content="Professor Dr. Md. Nurul Islam, Vice-Chancellor Jahangirnagar University, JU VC, Geography and Environment, Climate Change, Fluvial Geomorphology, GIS Remote Sensing">
     <meta name="author" content="Prof. Dr. Md. Nurul Islam">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://saddamuw.github.io/professor-nurul-islam/">
 
-    <!-- Open Graph / Social Media Meta Tags -->
+    <!-- Open Graph & Social Media -->
     <meta property="og:title" content="Prof. Dr. Md. Nurul Islam | Vice-Chancellor, Jahangirnagar University">
-    <meta property="og:description" content="Official information hub of Prof. Dr. Md. Nurul Islam — Vice-Chancellor of Jahangirnagar University. Explore academic achievements, research leadership, news, and activity gallery.">
+    <meta property="og:description" content="Official information hub of Prof. Dr. Md. Nurul Islam — Vice-Chancellor of Jahangirnagar University.">
     <meta property="og:image" content="https://saddamuw.github.io/professor-nurul-islam/images/gallery/vc-official-portrait.webp">
     <meta property="og:url" content="https://saddamuw.github.io/professor-nurul-islam/">
     <meta property="og:type" content="website">
 
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Prof. Dr. Md. Nurul Islam | VC, Jahangirnagar University">
-    <meta name="twitter:description" content="Explore research, academic leadership, and official activities of Jahangirnagar University Vice-Chancellor Prof. Dr. Md. Nurul Islam.">
-    <meta name="twitter:image" content="https://saddamuw.github.io/professor-nurul-islam/images/gallery/vc-official-portrait.webp">
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- FontAwesome 6.5.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- Custom Styles -->
+    <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- JSON-LD Structured Data Schema -->
+    <!-- Inline Safety Styles to Guarantee Image Limits & Grid Alignment -->
+    <style>
+      img { max-width: 100% !important; height: auto !important; }
+      .hero-portrait-img-fixed { max-height: 460px; width: 100%; object-fit: cover; object-position: center 20%; border-radius: 12px; }
+      .nav-logo-thumb { width: 42px; height: 42px; border-radius: 50%; border: 2px solid #d4af37; object-fit: cover; }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -46,21 +50,7 @@
         "@type": "EducationalOrganization",
         "name": "Jahangirnagar University",
         "url": "https://juniv.edu"
-      },
-      "almaMater": [
-        {
-          "@type": "EducationalOrganization",
-          "name": "Jahangirnagar University"
-        },
-        {
-          "@type": "EducationalOrganization",
-          "name": "University of Nottingham"
-        }
-      ],
-      "sameAs": [
-        "https://juniv.edu",
-        "https://en.wikipedia.org/wiki/Md._Nurul_Islam_(academic)"
-      ]
+      }
     }
     </script>
 </head>
@@ -69,34 +59,36 @@
     <!-- ==========================================
          NAVIGATION BAR
          ========================================== -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom" id="mainNavbar">
         <div class="container">
-            <a href="#home" class="nav-brand">
-                <img src="images/juniv-logo.webp" alt="JU Logo" class="nav-logo-img">
-                <div class="nav-brand-title">
-                    <span>Prof. Dr. Md. Nurul Islam</span>
-                    <span>Vice-Chancellor, JU</span>
+            <a class="navbar-brand d-flex align-items-center gap-3" href="#home">
+                <img src="images/juniv-logo.webp" alt="JU Logo" class="nav-logo-thumb">
+                <div>
+                    <span class="brand-title">Prof. Dr. Md. Nurul Islam</span>
+                    <span class="brand-sub">Vice-Chancellor, Jahangirnagar University</span>
                 </div>
             </a>
 
-            <div class="nav-menu" id="navMenu">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#priorities" class="nav-link">VC Vision</a>
-                <a href="#timeline" class="nav-link">Journey</a>
-                <a href="#research" class="nav-link">Research</a>
-                <a href="#publications" class="nav-link">Publications</a>
-                <a href="#news" class="nav-link">News & Activity</a>
-                <a href="#gallery" class="nav-link">Gallery</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <div class="nav-actions">
-                <button class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Theme">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <button class="nav-toggle-btn" id="navToggleBtn" aria-label="Toggle navigation menu">
-                    <i class="fas fa-bars"></i>
-                </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#priorities">VC Vision</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#timeline">Journey</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">News & Media</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
+                    <button class="theme-btn" id="themeToggleBtn" title="Toggle Light/Dark Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -104,43 +96,65 @@
     <!-- ==========================================
          HERO SECTION
          ========================================== -->
-    <header class="hero" id="home">
-        <div class="hero-pattern"></div>
-        <div class="container hero-grid">
-            <div class="hero-text-content">
-                <div class="hero-badge">
-                    <i class="fas fa-landmark"></i> Executive Academic Leadership
-                </div>
-                <h1 class="hero-title">Professor Dr. Md. Nurul Islam</h1>
-                <p class="hero-subtitle">
-                    Vice-Chancellor of Jahangirnagar University (JU). Leading academic excellence, research innovation, and sustainable campus development with a student-centered and inclusive vision.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#priorities" class="btn btn-primary">
-                        <i class="fas fa-compass"></i> VC Priorities
-                    </a>
-                    <a href="#news" class="btn btn-outline">
-                        <i class="fas fa-newspaper"></i> Latest News & Activities
-                    </a>
-                </div>
-                <div class="hero-stats" id="heroStats">
-                    <!-- Rendered dynamically by script.js -->
-                </div>
-            </div>
+    <header class="hero-wrapper" id="home">
+        <div class="container position-relative z-1">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-7">
+                    <div class="hero-tag">
+                        <i class="fas fa-landmark"></i> Executive Academic Leadership
+                    </div>
+                    <h1 class="hero-heading">Professor Dr. Md. Nurul Islam</h1>
+                    <p class="hero-lead">
+                        Vice-Chancellor of Jahangirnagar University (JU). Spearheading academic excellence, research innovation, global ranking elevation, and sustainable development across the campus.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="#priorities" class="btn btn-warning btn-lg fw-bold rounded-pill px-4" style="background:#d4af37; border-color:#d4af37; color:#000;">
+                            <i class="fas fa-compass me-2"></i> VC Priorities
+                        </a>
+                        <a href="#news" class="btn btn-outline-light btn-lg rounded-pill px-4">
+                            <i class="fas fa-newspaper me-2"></i> News & Activity Hub
+                        </a>
+                    </div>
 
-            <div class="hero-portrait-card">
-                <div class="hero-portrait-wrapper">
-                    <img src="images/gallery/vc-official-portrait.webp" alt="Prof. Dr. Md. Nurul Islam" class="hero-portrait-img">
-                    <div class="hero-portrait-overlay">
-                        <div class="hero-portrait-name">Prof. Dr. Md. Nurul Islam</div>
-                        <div class="hero-portrait-title">Vice-Chancellor, Jahangirnagar University</div>
+                    <!-- Stat Boxes -->
+                    <div class="row g-3 mt-2" id="heroStatsContainer">
+                        <div class="col-6 col-sm-3">
+                            <div class="stat-box">
+                                <div class="stat-val">25+</div>
+                                <div class="stat-lbl">Years Academia</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-3">
+                            <div class="stat-box">
+                                <div class="stat-val">4</div>
+                                <div class="stat-lbl">Universities</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-3">
+                            <div class="stat-box">
+                                <div class="stat-val">50+</div>
+                                <div class="stat-lbl">Publications</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-3">
+                            <div class="stat-box">
+                                <div class="stat-val">4 Yrs</div>
+                                <div class="stat-lbl">VC Tenure</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="hero-floating-tag">
-                    <i class="fas fa-award"></i>
-                    <div>
-                        <strong style="display:block; font-size: 0.85rem;">Appointed VC</strong>
-                        <span style="font-size:0.75rem; color: var(--text-muted);">26 September 2026</span>
+
+                <div class="col-lg-5">
+                    <div class="hero-card">
+                        <div class="hero-img-container">
+                            <img src="images/gallery/vc-official-portrait.webp" alt="Prof. Dr. Md. Nurul Islam" class="hero-portrait-img-fixed">
+                        </div>
+                        <div class="hero-card-footer">
+                            <h3 class="hero-card-name">Prof. Dr. Md. Nurul Islam</h3>
+                            <p class="hero-card-role">Vice-Chancellor, Jahangirnagar University</p>
+                            <span class="badge bg-success mt-2 px-3 py-2 rounded-pill"><i class="fas fa-check-circle me-1"></i> Appointed 26 September 2026</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -150,35 +164,39 @@
     <!-- ==========================================
          VC DESK & VISION PRIORITIES
          ========================================== -->
-    <section class="section" id="priorities">
+    <section class="section-padding" id="priorities">
         <div class="container">
-            <div class="section-header">
-                <span class="section-eyebrow"><i class="fas fa-bullseye"></i> VC Desk & Priorities</span>
-                <h2 class="section-title">Vision for Jahangirnagar University</h2>
-                <p class="section-subtitle">
-                    Strategic focus areas aimed at restoring academic dignity, expanding research funding, and advancing technology-driven global standards.
+            <div class="section-header text-center">
+                <span class="section-subtitle-tag"><i class="fas fa-bullseye me-1"></i> VC Desk & Priorities</span>
+                <h2 class="display-6 fw-bold">Vision for Jahangirnagar University</h2>
+                <p class="text-muted mx-auto" style="max-width: 680px;">
+                    Strategic priorities focused on enhancing research quality, technological integration, student welfare, and global academic standings.
                 </p>
             </div>
-            <div class="vc-priorities-grid" id="prioritiesGrid">
-                <!-- Rendered dynamically by script.js -->
+
+            <div class="row g-4" id="prioritiesGrid">
+                <!-- Dynamically populated or rendered -->
             </div>
         </div>
     </section>
 
     <!-- ==========================================
-         ACADEMIC & EXECUTIVE TIMELINE
+         TIMELINE JOURNEY
          ========================================== -->
-    <section class="section timeline-section" id="timeline">
+    <section class="section-padding bg-body-tertiary" id="timeline">
         <div class="container">
-            <div class="section-header">
-                <span class="section-eyebrow"><i class="fas fa-history"></i> Leadership Journey</span>
-                <h2 class="section-title">Academic & Administrative Milestones</h2>
-                <p class="section-subtitle">
-                    A distinguished career spanning top public universities, international research, and senior university executive positions.
+            <div class="section-header text-center">
+                <span class="section-subtitle-tag"><i class="fas fa-history me-1"></i> Leadership Journey</span>
+                <h2 class="display-6 fw-bold">Academic & Executive Milestones</h2>
+                <p class="text-muted mx-auto" style="max-width: 680px;">
+                    A distinguished career serving leading public universities, international research consortia, and university administration.
                 </p>
             </div>
-            <div class="timeline" id="timelineContainer">
-                <!-- Rendered dynamically by script.js -->
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9" id="timelineContainer">
+                    <!-- Rendered by script.js -->
+                </div>
             </div>
         </div>
     </section>
@@ -186,181 +204,194 @@
     <!-- ==========================================
          RESEARCH EXPERTISE
          ========================================== -->
-    <section class="section" id="research">
+    <section class="section-padding" id="research">
         <div class="container">
-            <div class="section-header">
-                <span class="section-eyebrow"><i class="fas fa-microscope"></i> Domain Expertise</span>
-                <h2 class="section-title">Geospatial Science & Environmental Research</h2>
-                <p class="section-subtitle">
-                    Pioneering research in river geomorphology, floodplain management, and climate change adaptation across Bangladesh's deltaic systems.
+            <div class="section-header text-center">
+                <span class="section-subtitle-tag"><i class="fas fa-microscope me-1"></i> Domain Focus</span>
+                <h2 class="display-6 fw-bold">Geospatial Science & Climate Research</h2>
+                <p class="text-muted mx-auto" style="max-width: 680px;">
+                    Academic leadership in fluvial geomorphology, floodplain management, and remote sensing applications.
                 </p>
             </div>
-            <div class="research-grid" id="researchGrid">
-                <!-- Rendered dynamically by script.js -->
+
+            <div class="row g-4" id="researchGrid">
+                <!-- Rendered by script.js -->
             </div>
         </div>
     </section>
 
     <!-- ==========================================
-         VERIFIED PUBLICATIONS
+         PUBLICATIONS
          ========================================== -->
-    <section class="section publications-section" id="publications">
+    <section class="section-padding bg-body-tertiary" id="publications">
         <div class="container">
-            <div class="section-header">
-                <span class="section-eyebrow"><i class="fas fa-book-bookmark"></i> Scholarly Works</span>
-                <h2 class="section-title">Publications & Research Works</h2>
-                <p class="section-subtitle">
-                    Verified peer-reviewed articles, technical monographs, and academic research papers.
+            <div class="section-header text-center">
+                <span class="section-subtitle-tag"><i class="fas fa-book me-1"></i> Scholarly Output</span>
+                <h2 class="display-6 fw-bold">Publications & Research Works</h2>
+                <p class="text-muted mx-auto" style="max-width: 680px;">
+                    Verified research papers, monographs, and deltaic environmental studies.
                 </p>
             </div>
 
-            <div class="pub-filters">
-                <button class="pub-filter-btn active" data-filter="all">All Works</button>
-                <button class="pub-filter-btn" data-filter="journal">Journal Papers</button>
-                <button class="pub-filter-btn" data-filter="report">Monographs & Reports</button>
+            <div class="d-flex justify-content-center gap-2 mb-4 flex-wrap" id="pubFilterBtns">
+                <button class="btn btn-sm btn-outline-success active rounded-pill px-3" data-filter="all">All Works</button>
+                <button class="btn btn-sm btn-outline-success rounded-pill px-3" data-filter="journal">Journal Papers</button>
+                <button class="btn btn-sm btn-outline-success rounded-pill px-3" data-filter="report">Monographs & Reports</button>
             </div>
 
-            <div class="pub-list" id="pubList">
-                <!-- Rendered dynamically by script.js -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10" id="pubList">
+                    <!-- Rendered by script.js -->
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ==========================================
-         NEWS & ACTIVITIES HUB
+         NEWS & ACTIVITY HUB
          ========================================== -->
-    <section class="section" id="news">
+    <section class="section-padding" id="news">
         <div class="container">
-            <div class="section-header">
-                <span class="section-eyebrow"><i class="fas fa-rss"></i> Media & Updates</span>
-                <h2 class="section-title">Vice-Chancellor News & Activity Hub</h2>
-                <p class="section-subtitle">
-                    Public news coverage, administrative statements, speeches, and recent campus activities of VC Prof. Dr. Md. Nurul Islam.
+            <div class="section-header text-center">
+                <span class="section-subtitle-tag"><i class="fas fa-newspaper me-1"></i> Media & Updates</span>
+                <h2 class="display-6 fw-bold">Vice-Chancellor News & Activity Hub</h2>
+                <p class="text-muted mx-auto" style="max-width: 680px;">
+                    Official news updates, press releases, public addresses, and campus activities of VC Prof. Dr. Md. Nurul Islam.
                 </p>
             </div>
 
-            <div class="news-filters">
-                <button class="news-filter-btn active" data-filter="all">All Media</button>
-                <button class="news-filter-btn" data-filter="ju-vc">JU VC News</button>
-                <button class="news-filter-btn" data-filter="past-roles">Earlier Leadership</button>
-                <button class="news-filter-btn" data-filter="BN">বাংলা খবর</button>
+            <div class="d-flex justify-content-center gap-2 mb-4 flex-wrap" id="newsFilterBtns">
+                <button class="btn btn-sm btn-outline-dark active rounded-pill px-3" data-filter="all">All News</button>
+                <button class="btn btn-sm btn-outline-dark rounded-pill px-3" data-filter="ju-vc">JU VC News</button>
+                <button class="btn btn-sm btn-outline-dark rounded-pill px-3" data-filter="past-roles">Earlier Roles</button>
+                <button class="btn btn-sm btn-outline-dark rounded-pill px-3" data-filter="BN">বাংলা সংবাদ</button>
             </div>
 
-            <div class="news-grid" id="newsGrid">
-                <!-- Rendered dynamically by script.js -->
+            <div class="row g-4" id="newsGrid">
+                <!-- Rendered by script.js -->
             </div>
         </div>
     </section>
 
     <!-- ==========================================
-         PHOTO GALLERY
+         GALLERY & LIGHTBOX
          ========================================== -->
-    <section class="section gallery-section" id="gallery">
+    <section class="section-padding bg-body-tertiary" id="gallery">
         <div class="container">
-            <div class="section-header">
-                <span class="section-eyebrow"><i class="fas fa-images"></i> Visual Archive</span>
-                <h2 class="section-title">Leadership & Campus Gallery</h2>
-                <p class="section-subtitle">
-                    Photos of Vice-Chancellor interactions, official engagements, and the scenic Jahangirnagar University campus.
+            <div class="section-header text-center">
+                <span class="section-subtitle-tag"><i class="fas fa-images me-1"></i> Visual Archive</span>
+                <h2 class="display-6 fw-bold">Leadership & Campus Photo Gallery</h2>
+                <p class="text-muted mx-auto" style="max-width: 680px;">
+                    Visual collection highlighting university events, official addresses, and Jahangirnagar University campus life.
                 </p>
             </div>
 
-            <div class="gallery-filters">
-                <button class="gallery-filter-btn active" data-filter="all">All Photos</button>
-                <button class="gallery-filter-btn" data-filter="leadership">VC Activities</button>
-                <button class="gallery-filter-btn" data-filter="campus">JU Campus</button>
+            <div class="d-flex justify-content-center gap-2 mb-4 flex-wrap" id="galleryFilterBtns">
+                <button class="btn btn-sm btn-outline-success active rounded-pill px-3" data-filter="all">All Photos</button>
+                <button class="btn btn-sm btn-outline-success rounded-pill px-3" data-filter="leadership">VC Engagements</button>
+                <button class="btn btn-sm btn-outline-success rounded-pill px-3" data-filter="campus">JU Campus</button>
             </div>
 
-            <div class="gallery-grid" id="galleryGrid">
-                <!-- Rendered dynamically by script.js -->
+            <div class="row g-3" id="galleryGrid">
+                <!-- Rendered by script.js -->
             </div>
         </div>
     </section>
 
-    <!-- Lightbox Modal -->
-    <div class="lightbox-modal" id="lightboxModal" aria-hidden="true">
-        <button class="lightbox-close" id="lightboxClose" aria-label="Close image lightbox">&times;</button>
-        <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous photo">&lsaquo;</button>
-        <button class="lightbox-next" id="lightboxNext" aria-label="Next photo">&rsaquo;</button>
-        <div class="lightbox-content">
-            <img src="" alt="" id="lightboxImg" class="lightbox-img">
-            <div class="lightbox-caption">
-                <h4 id="lightboxTitle"></h4>
-                <p id="lightboxDesc"></p>
+    <!-- Bootstrap Modal for Photo Lightbox -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-white border-0">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title" id="lightboxModalTitle">Photo View</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-3">
+                    <img src="" id="lightboxModalImg" class="img-fluid rounded" alt="" style="max-height: 75vh; object-fit: contain;">
+                    <p class="mt-3 text-white-50 small mb-0" id="lightboxModalDesc"></p>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- ==========================================
-         OFFICE CONTACT & FORM
+         CONTACT SECTION
          ========================================== -->
-    <section class="section" id="contact">
+    <section class="section-padding" id="contact">
         <div class="container">
-            <div class="section-header">
-                <span class="section-eyebrow"><i class="fas fa-paper-plane"></i> Get in Touch</span>
-                <h2 class="section-title">Vice-Chancellor Office Contact</h2>
-                <p class="section-subtitle">
-                    Contact the VC Secretariat for administrative communications, academic inquiries, or official collaborations.
+            <div class="section-header text-center">
+                <span class="section-subtitle-tag"><i class="fas fa-paper-plane me-1"></i> Get in Touch</span>
+                <h2 class="display-6 fw-bold">Vice-Chancellor Office Contact</h2>
+                <p class="text-muted mx-auto" style="max-width: 680px;">
+                    Reach the Secretariat of the Vice-Chancellor for official invitations, administrative queries, or academic cooperation.
                 </p>
             </div>
 
-            <div class="contact-grid">
-                <div class="contact-info-card">
-                    <h3 style="margin-bottom: 24px;">Secretariat Details</h3>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-building-columns"></i></div>
-                        <div class="contact-details">
-                            <h5>Office Address</h5>
-                            <p>Office of the Vice-Chancellor, Jahangirnagar University<br>Savar, Dhaka-1342, Bangladesh</p>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-5">
+                    <div class="custom-card">
+                        <h4 class="fw-bold mb-4"><i class="fas fa-building-columns text-success me-2"></i> Secretariat Details</h4>
+                        
+                        <div class="d-flex gap-3 mb-4">
+                            <div class="icon-badge flex-shrink-0"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Office Address</h6>
+                                <p class="text-muted small mb-0">Office of the Vice-Chancellor, Jahangirnagar University<br>Savar, Dhaka-1342, Bangladesh</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                        <div class="contact-details">
-                            <h5>PABX & Telephone</h5>
-                            <p>+880 2 224491045 - 51 (PABX)<br>Ext. 1201 (Secretary to VC)</p>
+
+                        <div class="d-flex gap-3 mb-4">
+                            <div class="icon-badge flex-shrink-0"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Telephone & PABX</h6>
+                                <p class="text-muted small mb-0">+880 2 224491045 - 51 (PABX)<br>Ext. 1201 (Secretary to VC)</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                        <div class="contact-details">
-                            <h5>Official Email</h5>
-                            <p><a href="mailto:vc@juniv.edu">vc@juniv.edu</a> / <a href="mailto:registrar@juniv.edu">registrar@juniv.edu</a></p>
+
+                        <div class="d-flex gap-3 mb-4">
+                            <div class="icon-badge flex-shrink-0"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Official Email</h6>
+                                <p class="text-muted small mb-0"><a href="mailto:vc@juniv.edu" class="text-decoration-none">vc@juniv.edu</a> / <a href="mailto:registrar@juniv.edu" class="text-decoration-none">registrar@juniv.edu</a></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-globe"></i></div>
-                        <div class="contact-details">
-                            <h5>University Portal</h5>
-                            <p><a href="https://juniv.edu" target="_blank" rel="noopener">www.juniv.edu</a></p>
+
+                        <div class="d-flex gap-3">
+                            <div class="icon-badge flex-shrink-0"><i class="fas fa-globe"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-1">University Website</h6>
+                                <p class="text-muted small mb-0"><a href="https://juniv.edu" target="_blank" rel="noopener" class="text-decoration-none">www.juniv.edu</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="contact-form-card">
-                    <h3 style="margin-bottom: 24px;">Send a Message</h3>
-                    <form id="contactForm" action="https://formsubmit.co/registrar@juniv.edu" method="POST">
-                        <div class="form-group">
-                            <label class="form-label" for="formName">Full Name *</label>
-                            <input type="text" id="formName" name="name" class="form-input" placeholder="Your name" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="formEmail">Email Address *</label>
-                            <input type="email" id="formEmail" name="email" class="form-input" placeholder="name@example.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="formSubject">Subject</label>
-                            <input type="text" id="formSubject" name="subject" class="form-input" placeholder="Subject of your message">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="formMessage">Message *</label>
-                            <textarea id="formMessage" name="message" class="form-textarea" placeholder="Type your message here..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                        <div id="contactStatus" style="margin-top: 12px; font-size: 0.9rem; text-align: center;"></div>
-                    </form>
+                <div class="col-lg-6">
+                    <div class="custom-card">
+                        <h4 class="fw-bold mb-4"><i class="fas fa-envelope-open-text text-success me-2"></i> Send Official Message</h4>
+                        <form id="contactForm" action="https://formsubmit.co/registrar@juniv.edu" method="POST">
+                            <div class="mb-3">
+                                <label for="formName" class="form-label fw-medium small">Full Name *</label>
+                                <input type="text" class="form-control" id="formName" name="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formEmail" class="form-label fw-medium small">Email Address *</label>
+                                <input type="email" class="form-control" id="formEmail" name="email" placeholder="name@domain.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formSubject" class="form-label fw-medium small">Subject</label>
+                                <input type="text" class="form-control" id="formSubject" name="subject" placeholder="Purpose of communication">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formMessage" class="form-label fw-medium small">Message *</label>
+                                <textarea class="form-control" id="formMessage" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success w-100 fw-bold py-2 rounded-3" style="background:#006837; border-color:#006837;">
+                                <i class="fas fa-paper-plane me-1"></i> Submit Message
+                            </button>
+                            <div id="contactStatus" class="mt-2 small text-center"></div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -369,39 +400,44 @@
     <!-- ==========================================
          FOOTER
          ========================================== -->
-    <footer class="footer">
+    <footer class="footer-wrapper">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <h3>Prof. Dr. Md. Nurul Islam</h3>
-                    <p>Vice-Chancellor, Jahangirnagar University. Dedicated to quality higher education, river geomorphology research, and climate resilience in Bangladesh.</p>
+            <div class="row g-4 mb-4">
+                <div class="col-lg-6">
+                    <h4 class="fw-bold text-white mb-3">Prof. Dr. Md. Nurul Islam</h4>
+                    <p class="small text-white-50 mb-0" style="max-width: 480px;">
+                        Vice-Chancellor, Jahangirnagar University. Dedicated to quality higher education, river geomorphology research, climate resilience, and sustainable development.
+                    </p>
                 </div>
-                <div>
-                    <h4 class="footer-title">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#priorities">VC Priorities</a></li>
-                        <li><a href="#timeline">Leadership Journey</a></li>
-                        <li><a href="#research">Research Areas</a></li>
-                        <li><a href="#news">News & Media</a></li>
+                <div class="col-lg-3 col-6">
+                    <h6 class="fw-bold text-white mb-3">Quick Links</h6>
+                    <ul class="list-unstyled small mb-0">
+                        <li class="mb-2"><a href="#priorities">VC Vision & Priorities</a></li>
+                        <li class="mb-2"><a href="#timeline">Leadership Journey</a></li>
+                        <li class="mb-2"><a href="#research">Research Focus</a></li>
+                        <li class="mb-2"><a href="#news">News & Activities</a></li>
                         <li><a href="#gallery">Photo Gallery</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4 class="footer-title">Official Resources</h4>
-                    <ul class="footer-links">
-                        <li><a href="https://juniv.edu" target="_blank" rel="noopener">Jahangirnagar University</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/Md._Nurul_Islam_(academic)" target="_blank" rel="noopener">Wikipedia Profile</a></li>
+                <div class="col-lg-3 col-6">
+                    <h6 class="fw-bold text-white mb-3">Official Resources</h6>
+                    <ul class="list-unstyled small mb-0">
+                        <li class="mb-2"><a href="https://juniv.edu" target="_blank" rel="noopener">Jahangirnagar University</a></li>
+                        <li class="mb-2"><a href="https://en.wikipedia.org/wiki/Md._Nurul_Islam_(academic)" target="_blank" rel="noopener">Wikipedia Profile</a></li>
                         <li><a href="https://commons.wikimedia.org/wiki/Category:Md._Nurul_Islam" target="_blank" rel="noopener">Wikimedia Commons Archive</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>© 2026 Prof. Dr. Md. Nurul Islam. Information Hub — Jahangirnagar University, Savar, Dhaka-1342.</p>
+            <div class="border-top border-secondary pt-3 text-center small text-white-50">
+                © 2026 Prof. Dr. Md. Nurul Islam | Information Hub — Jahangirnagar University, Savar, Dhaka-1342.
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript Data and Controller Scripts -->
+    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Custom Data & Script Files -->
     <script src="js/data.js"></script>
     <script src="js/script.js"></script>
 </body>
