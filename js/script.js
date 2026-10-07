@@ -74,13 +74,13 @@ function renderTimeline() {
   if (!container || typeof SITE_DATA === 'undefined') return;
 
   container.innerHTML = SITE_DATA.timeline.map(t => `
-    <div class="timeline-item-card custom-card mb-4">
+    <div class="timeline-card">
       <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap gap-2">
-        <span class="timeline-year-tag"><i class="far fa-calendar-alt me-1"></i> ${t.year}</span>
+        <span class="timeline-year"><i class="far fa-calendar-alt me-1"></i> ${t.year}</span>
         <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-3 py-1">${t.badge}</span>
       </div>
-      <h4 class="fw-bold mb-1">${t.role}</h4>
-      <h6 class="text-secondary fw-semibold mb-2">${t.institution}</h6>
+      <h5 class="fw-bold mb-1 fs-5">${t.role}</h5>
+      <h6 class="text-secondary fw-semibold mb-2 fs-6">${t.institution}</h6>
       <p class="text-muted small mb-0">${t.desc}</p>
     </div>
   `).join('');

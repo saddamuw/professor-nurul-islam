@@ -17,8 +17,8 @@
   --text-main: #212529;
   --text-muted: #6c757d;
   --border-color: #e9ecef;
-  --card-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-  --card-hover-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  --card-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  --card-hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 [data-bs-theme="dark"] {
@@ -35,8 +35,8 @@
   --text-main: #e9ecef;
   --text-muted: #adb5bd;
   --border-color: #213328;
-  --card-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-  --card-hover-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  --card-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  --card-hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
 /* Base resets & fallbacks */
@@ -64,7 +64,7 @@ img {
 
 /* Navbar */
 .navbar-custom {
-  background: rgba(4, 30, 18, 0.92) !important;
+  background: rgba(4, 30, 18, 0.94) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(212, 175, 55, 0.2);
@@ -186,13 +186,13 @@ img {
 .hero-img-container {
   border-radius: 14px;
   overflow: hidden;
-  max-height: 480px;
+  max-height: 440px;
   position: relative;
 }
 
 .hero-img-container img {
   width: 100%;
-  height: 480px;
+  height: 440px;
   object-fit: cover;
   object-position: center 20%;
   display: block;
@@ -240,11 +240,12 @@ img {
 
 /* Sections */
 .section-padding {
-  padding: 80px 0;
+  padding: 70px 0;
+  position: relative;
 }
 
 .section-header {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .section-subtitle-tag {
@@ -262,18 +263,17 @@ img {
 }
 
 /* Feature Cards inside Grid Cols */
-.col-md-6 .custom-card, .col-lg-3 .custom-card, .col-lg-4 .custom-card {
-  height: 100%;
-}
-
 .custom-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: 16px;
   padding: 24px 28px;
-  height: auto;
   box-shadow: var(--card-shadow);
   transition: all 0.3s ease;
+}
+
+.row > [class*="col-"] > .custom-card {
+  height: 100%;
 }
 
 .custom-card:hover {
@@ -300,43 +300,39 @@ img {
   color: #66bb6a;
 }
 
-/* Timeline specific styles - STRICT HEIGHT OVERRIDE */
-.timeline-item-card {
-  position: relative;
-  padding: 24px 28px;
-  padding-left: 36px;
-  border-left: 3px solid #006837;
-  margin-bottom: 24px;
+/* Timeline Cards — NO FLEX STRETCH, STRICT BLOCK LAYOUT */
+.timeline-card {
+  display: block !important;
   height: auto !important;
-  min-height: unset !important;
-  max-height: unset !important;
+  min-height: auto !important;
+  max-height: none !important;
+  flex: none !important;
   background: var(--bg-surface);
-  border-top: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
-  border-radius: 14px;
+  border: 1px solid var(--border-color);
+  border-left: 4px solid #006837 !important;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 20px !important;
   box-shadow: var(--card-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.timeline-item-card::before {
-  content: '';
-  position: absolute;
-  left: -9px;
-  top: 24px;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: var(--accent-color);
-  border: 3px solid var(--bg-surface);
+.timeline-card:last-child {
+  margin-bottom: 0 !important;
 }
 
-.timeline-year-tag {
+.timeline-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--card-hover-shadow);
+}
+
+.timeline-year {
   font-weight: 700;
   color: #006837;
   font-size: 0.85rem;
 }
 
-[data-bs-theme="dark"] .timeline-year-tag {
+[data-bs-theme="dark"] .timeline-year {
   color: #66bb6a;
 }
 
@@ -352,7 +348,7 @@ img {
 
 .gallery-card-item img {
   width: 100%;
-  height: 240px;
+  height: 220px;
   object-fit: cover;
   transition: transform 0.4s ease;
 }

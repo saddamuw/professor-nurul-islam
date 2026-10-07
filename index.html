@@ -31,11 +31,12 @@
     <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Inline Safety Styles to Guarantee Image Limits & Grid Alignment -->
+    <!-- Inline Safety Styles to Guarantee Image Limits & Timeline Height -->
     <style>
       img { max-width: 100% !important; height: auto !important; }
-      .hero-portrait-img-fixed { max-height: 460px; width: 100%; object-fit: cover; object-position: center 20%; border-radius: 12px; }
+      .hero-portrait-img-fixed { max-height: 440px; width: 100%; object-fit: cover; object-position: center 20%; border-radius: 12px; }
       .nav-logo-thumb { width: 42px; height: 42px; border-radius: 50%; border: 2px solid #d4af37; object-fit: cover; }
+      .timeline-card { display: block !important; height: auto !important; margin-bottom: 16px !important; }
     </style>
 
     <!-- Schema.org JSON-LD -->
@@ -175,13 +176,13 @@
             </div>
 
             <div class="row g-4" id="prioritiesGrid">
-                <!-- Dynamically populated or rendered -->
+                <!-- Dynamically populated -->
             </div>
         </div>
     </section>
 
     <!-- ==========================================
-         TIMELINE JOURNEY
+         TIMELINE JOURNEY (STANDALONE BLOCK)
          ========================================== -->
     <section class="section-padding bg-body-tertiary" id="timeline">
         <div class="container">
@@ -193,10 +194,9 @@
                 </p>
             </div>
 
-            <div class="row justify-content-center">
-                <div class="col-lg-9" id="timelineContainer">
-                    <!-- Rendered by script.js -->
-                </div>
+            <!-- Standalone block container with max-width -->
+            <div style="max-width: 860px; margin: 0 auto;" id="timelineContainer">
+                <!-- Rendered by script.js -->
             </div>
         </div>
     </section>
