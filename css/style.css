@@ -17,8 +17,8 @@
   --text-main: #212529;
   --text-muted: #6c757d;
   --border-color: #e9ecef;
-  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  --card-hover-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  --card-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  --card-hover-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 [data-bs-theme="dark"] {
@@ -35,8 +35,8 @@
   --text-main: #e9ecef;
   --text-muted: #adb5bd;
   --border-color: #213328;
-  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  --card-hover-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  --card-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --card-hover-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
 }
 
 /* Base resets & fallbacks */
@@ -261,26 +261,30 @@ img {
   color: #66bb6a;
 }
 
-/* Feature Cards */
+/* Feature Cards inside Grid Cols */
+.col-md-6 .custom-card, .col-lg-3 .custom-card, .col-lg-4 .custom-card {
+  height: 100%;
+}
+
 .custom-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: 16px;
-  padding: 30px;
-  height: 100%;
+  padding: 24px 28px;
+  height: auto;
   box-shadow: var(--card-shadow);
   transition: all 0.3s ease;
 }
 
 .custom-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   box-shadow: var(--card-hover-shadow);
   border-color: rgba(0, 104, 55, 0.3);
 }
 
 .icon-badge {
-  width: 54px;
-  height: 54px;
+  width: 52px;
+  height: 52px;
   border-radius: 14px;
   background: rgba(0, 104, 55, 0.1);
   color: #006837;
@@ -288,7 +292,7 @@ img {
   align-items: center;
   justify-content: center;
   font-size: 1.4rem;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 [data-bs-theme="dark"] .icon-badge {
@@ -296,19 +300,29 @@ img {
   color: #66bb6a;
 }
 
-/* Timeline */
+/* Timeline specific styles - STRICT HEIGHT OVERRIDE */
 .timeline-item-card {
   position: relative;
-  padding-left: 30px;
+  padding: 24px 28px;
+  padding-left: 36px;
   border-left: 3px solid #006837;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+  height: auto !important;
+  min-height: unset !important;
+  max-height: unset !important;
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-radius: 14px;
+  box-shadow: var(--card-shadow);
 }
 
 .timeline-item-card::before {
   content: '';
   position: absolute;
   left: -9px;
-  top: 0;
+  top: 24px;
   width: 15px;
   height: 15px;
   border-radius: 50%;

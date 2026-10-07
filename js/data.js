@@ -58,9 +58,9 @@ const SITE_DATA = {
       year: "26 Sep 2026 – Present",
       role: "Vice-Chancellor",
       institution: "Jahangirnagar University",
-      badge: "Current Role",
+      badge: "Current Leadership",
       logo: "images/juniv-logo.webp",
-      desc: "Appointed by the President & Chancellor under Section 11(1) of the JU Act 1973. Leading academic innovation, research elevation, and administrative excellence."
+      desc: "Appointed by the President & Chancellor under Section 11(1) of the JU Act 1973. Leading academic innovation, global ranking elevation, and peaceful campus development."
     },
     {
       year: "16 Mar 2026 – 26 Sep 2026",
@@ -90,17 +90,33 @@ const SITE_DATA = {
       year: "2011",
       role: "Doctor of Philosophy (PhD) in Geography",
       institution: "University of Nottingham, UK",
-      badge: "Doctorate",
+      badge: "Doctorate & Post-Doc",
       logo: "images/nottingham-logo.svg",
-      desc: "Specialized doctoral research in fluvial geomorphology, river channel dynamics, and floodplain management."
+      desc: "Specialized doctoral research in fluvial geomorphology and floodplain dynamics. Completed post-doctoral research with the UK Flood Risk Management Research Consortium."
     },
     {
-      year: "Earlier Academic Career",
+      year: "2004 – 2011",
+      role: "Associate Professor & Assistant Professor",
+      institution: "Jahangirnagar University",
+      badge: "Faculty Promotion",
+      logo: "images/juniv-logo.webp",
+      desc: "Advanced research in river dynamics, watershed management, and environmental remote sensing at Jahangirnagar University."
+    },
+    {
+      year: "1998 – 2004",
       role: "Lecturer & Assistant Professor",
       institution: "Univ. of Rajshahi & Univ. of Chittagong",
-      badge: "Foundational Career",
+      badge: "Early Academic Career",
       logo: "images/cu-logo.webp",
-      desc: "Started university teaching career in Rajshahi and Chittagong before moving to Jahangirnagar University."
+      desc: "Initiated university teaching career in physical geography and GIS at Rajshahi University and Chittagong University."
+    },
+    {
+      year: "1992 – 1994",
+      role: "BSc (Hons) & MSc (Thesis) in Geography",
+      institution: "Jahangirnagar University",
+      badge: "First Class Honors",
+      logo: "images/juniv-logo.webp",
+      desc: "Graduated with First Class in both Bachelor of Science (Hons) and Master of Science (Thesis) degrees from Jahangirnagar University."
     }
   ],
 
@@ -168,7 +184,7 @@ const SITE_DATA = {
       lang: "EN",
       category: "ju-vc",
       desc: "Prof. Dr. Md. Nurul Islam extended warm greetings to teachers across the university, describing teaching as a noble mission for building tomorrow's Bangladesh.",
-      link: "https://www.bssnews.net/news/284561"
+      link: "https://www.bssnews.net"
     },
     {
       title: "Region-specific planning key to sustainable agricultural development: JU VC",
@@ -186,7 +202,7 @@ const SITE_DATA = {
       lang: "EN",
       category: "ju-vc",
       desc: "Vice-Chancellor Prof. Md. Nurul Islam outlined strategic reforms focused on quality research, technological integration, and faculty support.",
-      link: "https://www.bssnews.net/news/283112"
+      link: "https://www.bssnews.net"
     },
     {
       title: "Prof. Dr. Md. Nurul Islam appointed Vice-Chancellor of Jahangirnagar University",
@@ -302,7 +318,7 @@ const SITE_DATA = {
       thumb: "images/gallery/ju-lake-view-sm.webp",
       license: "CC BY-SA 4.0",
       artist: "Afrida Nurain",
-      page: "https://commons.wikimedia.org/wiki/File:Jahangirnagar_University_Lake_View.webp"
+      page: "https://commons.wikimedia.org/wiki/File:Jahangirnagar_University_Lake_View.jpg"
     },
     {
       slug: "ju-migratory-birds",
